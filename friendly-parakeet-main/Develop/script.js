@@ -1,17 +1,20 @@
 // Assignment code here
 let length =  window.prompt("How many characters will your password be? Enter a number between 8 and 128");
 
-let lengthFun = function() {let length =  window.prompt("How many characters will your password be? Enter a number between 8 and 128")};
+let lengthFun = function() {let length =  window.prompt("How many characters will your password be? Enter a number between 8 and 128"); 
+return length};
 
 if (isNaN(length)) {window.alert("Please, add a numeric value");
 lengthFun()};
 
 let charType = window.prompt("Enter a character type: special, numeric, uppercase, lowercase, mixed.")
 
-let charTypeFun = function() {let charType = window.prompt("Enter a character type: special, numeric, uppercase, lowercase, mixed.")};
+let charTypeFun = function() {let charType = window.prompt("Enter a character type: special, numeric, uppercase, lowercase, mixed.");
+return charType;};
 
 if (!isNaN(charType)) {window.alert("Please, add letter value");
 charTypeFun()};
+
 function generatePassword() {
   //evaluate character type
   let charSet = "";
